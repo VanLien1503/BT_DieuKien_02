@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cấu Trúc Điều Kiện 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1> Cấu Trúc Điều Kiện II</h1>
+<hr>
+<table>
+    <tr>
+        <th>Bài 01</th>
+        <th>Chuyển từ độ C sang độ F<br>
+             °C  x  9/5 + 32 = °F</th>
+        <td>
+            <select name="" id="Temperature">
+                <option value="C">°C</option>
+                <option value="F">°F</option>
+            </select>
+            <input type="number"id="number">
+            <button type="button"onclick="check()">Run</button>
+            <input type="number"id="resule"placeholder="Kết Quả">
+            <select name="" id="ToTemperature">
+                <option value="C">°C</option>
+                <option value="F">°F</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <th>Bài 02</th>
+        <th>Chuyển từ mét sang feet <br>
+            ft =m * 3.2808</th>
+        <td>
+            <button type="button"onclick="ConvertMet()"><strong>ConverMét</strong> Sang Feet</button>
+            <button type="button"onclick="ConvertFeet()"> <strong>ConverFeet</strong> Sang Mét</button>
+        </td>
+    </tr>
+    <tr>
+        <th>Bài 03</th>
+        <th>Tính diện tích hình vuông khi biết cạnh a</th>
+        <td>
+            <input type="number"id="a"placeholder="Nhập cạnh a">
+            <button type="button"onclick="acreage()">Diện Tích</button>
+            <p id="resuleStamgiac">Kết Quả</p>
+        </td>
+    </tr>
+    <tr>
+        <th>Bài 04</th>
+        <th>Tính diện tích hình  chữ nhật khi biết 02 cạnh a, b</th>
+        <td>
+            <input type="number"id="canhA">
+            <input type="number"id="CanhB">
+            <button type="button"onclick="Shcn()">Run</button>
+            <p id="resuleShc"></p>
+        </td>
+    </tr>
+    <tr>
+        <th>Bài 05</th>
+        <th>Tính diện tích tam giác vuông khi biết 02 cạnh kề a, b</th>
+        <td>
+            <input type="number"id="CanhkeA">
+            <input type="number"id="CanhkeB">
+            <button type="button"onclick="Stgab()">Run</button>
+            <p id="Stgab"></p>
+        </td>
+    </tr>
+    <tr>
+        <th>Bài 06</th>
+        <th>Giải phương trình bậc 1.</th>
+        <td>
+            <input type="number"id="inputA">
+            <input type="number" id="inputB">
+            <button type="button"onclick="equation()">Run</button>
+            <p id="resuleEquation"></p>
+        </td>
+    </tr>
+    <tr>
+        <th>Bài 07</th>
+        <th>Giải phương trình bậc 2</th>
+        <td>
+            <input type="number"id="inputA1">
+            <input type="number" id="inputB1">
+            <input type="number" id="inputC1">
+            <button type="button"onclick="equation2()">Run</button>
+            <p id="equation2"></p>
+        </td>
+    </tr>
+    <tr>
+        <th>Bài 08</th>
+        <th> Kiểm tra xem một số nhập vào <br>
+            có phải là tuổi của một người không.<br>
+             khi nhỏ 120 và lơn hơn 0
+        </th>
+        <td>
+            <input type="number"id="checkN">
+            <button type="button"onclick="CheckN()">Run</button>
+            <p id="resuleN">Kết Quả</p>
+        </td>
+    </tr>
+    <tr>
+        <th>Bài 09</th>
+        <th>Kiểm tra xem 3 số thực (a,b,c)<br>
+            nhập vào có phải là cạnh của một tam giác<br>
+            Điều kiện để a,b,c là cạnh của một tam giác là:
+        </th>
+        <td>
+            <input type="number" id="inputCanhA">
+            <input type="number" id="inputCanhB">
+            <input type="number" id="inputCanhC">
+            <button type="button" onclick="checkABC()">Check</button>
+            <p id="resuleABC">Kết Quả</p>
+        </td>
+    </tr>
+    <tr>
+        <th>Bài 10</th>
+        <th>Viết chương trình tính giá điện</th>
+        <td>
+            <input type="number" id="soDien">
+            <button type="button" onclick="giadien()">Run</button>
+            <p id="resuleGiaDien"> Kết Quả</p>
+        </td>
+    </tr>
+    <tr>
+        <th>Bài 11</th>
+        <th> Viết chương trình tính thuế thu nhập cá nhân</th>
+        <td>
+            <input type="number" id="numberVND">
+            <button type="button"onclick="checkThue()">Run</button>
+            <p id="resuleThue">Kết Quả</p>
+        </td>
+    </tr>
+    <tr>
+        <th>Bài 12</th>
+        <th> Viết chương trình tính lãi ngân hàng<br>
+            (lãi mẹ đẻ lại con) khi biết số tiền ban đầu<br>
+            số tháng cho vay và lãi xuất hàng tháng
+        </th>
+        <td>
+            <input type="number"id="money">
+            <select name="" id="month">
+                <option value="6">6Tháng</option>
+                <option value="12">12Tháng</option>
+                <option value="24">24Tháng</option>
+                <option value="36">36Tháng</option>
+                <option value="40">36Tháng++</option>
+            </select>
+            <button type="button" onclick="laisuat()">Run</button>
+            <p id="resuleLaiSuat">Kết Quả</p>
+        </td>
+    </tr>
+</table>
+<script src="app.js"></script>
+</body>
+</html>
